@@ -1,0 +1,29 @@
+{
+  "name": "dh-action-tarker",
+  "version": "1.0.0",
+  "description": "Code for a discord bot tally gm fear tokens and player action tokens, to help with online play.",
+  "main": "index.js",
+  "scripts": {
+    "test": "!test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryan0x05/DH-Action-Tracker.git"
+  },
+  "keywords": [
+    "Daggerheart",
+    "action",
+    "tracker",
+    "fear",
+    "tracker"
+  ],
+  "author": "Bryan Tait",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryan0x05/DH-Action-Tracker/issues"
+  },
+  "homepage": "https://github.com/Bryan0x05/DH-Action-Tracker#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}

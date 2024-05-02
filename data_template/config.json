@@ -1,0 +1,5 @@
+{
+    "token": "Your bot token here",
+    "clientId": "Appliccation id goes here id",
+    "guildId": "server id goes here(also called guilds in the API)"
+}
