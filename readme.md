@@ -23,10 +23,11 @@
 
 # Slash commands
 * By typing a slash command and selecting an option all choices can be see on discord. For completion a secondary list will be included here, but the slash command list should be seen as the final authority if there is any discrepancies.
-* /act  => total amount of action tokens
-* /act (+ or -) => assumes +1 or -1, to update the total number of action tokens by adding or subtracting the provided number
+* /act  => total amount of action tokens.
+* /act (+ or -) => assumes +1 or -1, to update the total number of action tokens by adding or subtracting the provided number.
 * /act (+ or -) number => update total number of action tokens
-* /act (activeplayers) => Prints the username of the players for the last 5 addition operations, and their total tokens. This is so you can see how has been most active at the table.
+* /act (recentPlayers) => Prints the username of the players for the last 5 addition operations, and their tokens contributed. This is so you can see how has been most active at the table.
+* /act (clearRecent) => Clears the recent player list, read by the command above.
 * /act (convert_to_fear) => convert all remaining action tokens to fear tokens at a 2:1 ration, any excess get's dropped.
 * /fear => total amount of fear tokens
 * /fear (+ or -) number => update total maount of fear tokens by adding or subtracting the provided number.
