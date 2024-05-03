@@ -39,6 +39,9 @@ const rest = new REST().setToken(token);
 // and deploy your commands!
 (async () => {
     try {
+        // clear slate
+        await deleteExistingCommands();
+
         console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
         // The put method is used to fully refresh all commands in the guild with the current set
@@ -53,3 +56,27 @@ const rest = new REST().setToken(token);
         console.error(error);
     }
 })();
+
+// clear the slate by deleteing existing commands
+async function deleteExistingCommands() {
+    try {
+        console.log('Deleting existing commands...');
+
+        const existingCommands = await rest.get(
+            Routes.applicationGuildCommands(clientId, guildId)
+        );
+
+        if (existingCommands.length > 0) {
+            await rest.put(
+                Routes.applicationGuildCommands(clientId, guildId),
+                { body: [] } // Empty array to delete all commands
+            );
+
+            console.log('Existing commands deleted successfully.');
+        } else {
+            console.log('No existing commands found. Skipping deletion.');
+        }
+    } catch (error) {
+        console.error('Error deleting existing commands:', error);
+    }
+}
