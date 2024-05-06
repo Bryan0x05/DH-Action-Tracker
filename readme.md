@@ -14,17 +14,17 @@
 * If you want to run a test server for the commands. Also fill out the guildID field in "config.json". For help see see the above link again.
 
 # Registering / Deploying Commands
-* "node deploy-commands-test.js" will only deploy the slash commands to the test server(The one who's id you filled in the guildid). It will automatically add the prefix "test-" to commands to make them easy to tell apart from the globally deployed commmands. 
+* "node deploy-commands-test.js" will only deploy the slash commands to the test server(The one who's id you filled in the guildid). It will automatically add the prefix "test-" to commands to make them easy to tell apart from the globally deployed commands. 
 * "node deploy-commands-global.js" will deploy slash commands to all servers where this bot is present.
 
 # Running The Bot
-* "node index.js" will bot up the bot, and it'll login in to discord.
+* "node index.js" will boot up the bot, and it'll login in to discord using the provided token(which again, you should never share because it's your bot's password).
 * With the bot now online, it'll start listening for slash commands.
 
 # Slash commands
 * By typing a slash command and selecting an option all choices can be see on discord. For completion a secondary list will be included here, but the slash command list should be seen as the final authority if there is any discrepancies.
 * /act  => total amount of action tokens.
-* /act (+ or -) => assumes +1 or -1, to update the total number of action tokens by adding or subtracting the provided number.
+* /act (+ or -) => assumes +1 or -1, to update the total number of action tokens by adding or subtracting 1.
 * /act (+ or -) number => update total number of action tokens
 * /act (recentPlayers) => Prints the username of the players for the last 5 addition operations, and their tokens contributed. This is so you can see how has been most active at the table.
 * /act (clearRecent) => Clears the recent player list, read by the command above.
