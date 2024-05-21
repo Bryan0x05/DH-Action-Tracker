@@ -1,5 +1,5 @@
 # No longer in active developement
-While this code still works for now, this project has an sidelined in favor of more accessible bot that covers the same feature set and more. https://github.com/tom-kap/trackerheart-bot. 
+While this code still works for now, this project has bee sidelined in favor of more accessible bot that covers the same feature set and more. https://github.com/tom-kap/trackerheart-bot. 
 # Demo
 [![Alt text](https://img.youtube.com/vi/pPmlN6sgQZY/0.jpg)](https://www.youtube.com/watch?v=pPmlN6sgQZY)
 
